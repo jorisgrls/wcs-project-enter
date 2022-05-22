@@ -1,0 +1,391 @@
+:root{
+    --primary-font : 'Roboto'; /*main font*/
+    --primary-color: #77d5f1; /*main color*/
+}
+
+/*Body reset*/
+html{
+    font-size:62.5%; /*Rem conversion*/
+}
+
+body{
+    margin:0;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+h1{
+    margin:0;
+}
+/*End reset*/
+
+.container{
+    padding: 0 15vw 0 15vw;
+    margin: 0 auto 0 auto;
+}
+
+/*HEADER*/
+header{
+    background-color:white;
+    display:flex;
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.2);
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:20rem;
+}
+/*END HEADER*/
+
+/*NAVBAR DESKTOP*/
+.navbar{
+    width:80%;
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+
+.navbar ul{
+    margin:0;
+    height:100%;
+    list-style:none;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+    column-gap:4rem;
+}
+
+.navbar li{
+    color:black;
+    list-style: none;
+    font-family: var(--primary-font);
+    font-size:1.5rem;
+}
+
+.navbar li:last-child, .navbar-mobile li:last-child{
+    border-radius:0.5rem;
+    background-color:var(--primary-color);
+    padding:1.2rem;
+}
+
+.navbar li:last-child a, .navbar-mobile li:last-child a{
+    color:white;
+}
+
+.navbar li:hover, .navbar-mobile li:hover{
+    font-weight: 600;
+}
+/*END NAVBAR DESKTOP*/
+
+/*NAVBAR MOBILE*/
+.navbar-mobile{
+    width:100%;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    display:none;
+    justify-content:center;
+    text-align:center;
+}
+
+.navbar-mobile ul{
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    list-style:none;
+    row-gap:2rem;
+}
+
+
+.navbar-mobile.active{
+    display:flex;
+}
+
+.logo-menu{
+    display:flex;
+    justify-content:space-between;
+}
+
+.open-menu{
+    display:none;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+.header-mobile{
+    align-items:center;
+    flex-direction:column;
+}
+/*END NAVBAR MOBILE*/
+
+.welcome{
+    height:70vh;
+    background-image: url(assets/zeus.jpg);
+    background-size:cover;
+    background-position:top;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.welcome h1{
+    font-size:5.0rem;
+    font-family: 'MedievalSharp';
+    text-align:center;
+    color:white;
+    text-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    
+}
+
+.title-section{
+    font-family: var(--primary-font);
+    font-size: x-large;
+    padding-top:6.0rem;
+}
+
+.text-section{
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    margin:0 0 10rem 0;
+}
+
+.about{
+    display:flex;
+}
+
+.about-text{
+    display:flex;
+    flex-direction:column;
+}
+
+/*FAMILY CARDS*/
+.cards-family{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+    width:20.0rem;
+    background-color:white;
+    box-shadow: 0 0.5rem 2.0rem #999;
+    justify-content: center;
+    align-items:center;
+    border-radius:2.0rem;
+    margin:1.0rem;
+}
+
+.card:hover{
+    box-shadow: 0.1rem 0.8rem 2.0rem grey;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-image{
+    display:flex;
+    justify-content:center;
+}
+
+.card-image img{
+    width:80%;
+    margin: 0 auto 0 auto;
+}
+
+.title-card{
+    font-family: var(--primary-font);
+    font-size: medium;
+}
+/*END FAMILY CARDS*/
+
+
+/*SHIELD LINE */
+.shield-line{
+    display:flex;
+    margin:1.5rem 0 3rem 0;
+}
+
+.shield-line img{
+    width:7.0rem;
+}
+
+.color-line{
+    height:0.4rem;
+    width:0%;
+    background-color: var(--primary-color);
+    transition: width 0.5s ease-in-out;
+}
+
+.color-line-complete{
+    width:100%;
+}
+
+/*END SHIELD LINE*/
+
+/*FORMS*/
+.label_input{
+    padding-bottom:2.5rem;
+}
+
+
+form label{ 
+    font-family: var(--primary-font); 
+    font-size:1.7rem;
+    font-weight: 500;
+}
+
+input:not([type="submit"]),textarea{
+    width:100%;
+    border: 0.2rem solid #ccc;
+    background-color:transparent;
+    border-left:hidden;
+    border-right:hidden;
+    border-top:hidden;
+    padding-bottom:0.7rem;
+    padding-top:0.7rem;
+    font-size:1.6rem;
+}
+
+input:not([type="submit"]):focus, textarea:focus{
+    border-color:#4da8c4;
+}
+
+textarea{
+    max-width:100%;
+    min-width: 100%; /*verifier*/
+    height:10vh;
+}
+
+input,select,textarea {
+    color:black;
+    font-family: var(--primary-font); 
+    outline-style:none;
+}
+
+::placeholder{
+    font-family: var(--primary-font);
+    font-size:1.4rem;
+    color: rgba(39, 39, 39, 0.36);
+}
+
+.form-button{
+    float:right;
+    width:20%;
+    height:5.0rem;
+    background-color: #54b9d8;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-family: var(--primary-font);
+    margin-bottom:3rem;
+}
+
+.form-button:hover{
+    background-color:var(--primary-color);
+}
+
+.contact{
+    display:flex;
+    align-items:center;
+}
+
+.contact-image{
+    width:30%;
+    min-width:30%;
+    display:flex;
+    justify-content:center;
+}
+
+.contact-image img{
+    width:60%;
+}
+
+.contact form{
+    width:70%;
+}
+
+.form-contact{
+    padding-top:4.0rem;
+}
+/*END FORMS*/
+
+
+/*ASSETS*/
+table,th,td{
+    padding:1.0rem;
+    border: 0.1rem solid black;
+    border-collapse: collapse;
+}
+
+table{
+    margin:5rem auto 0;
+    width:95%;
+    font-family: var(--primary-font);
+    font-size:1.6rem;
+    text-align:center;
+}
+
+thead tr:first-child{
+    background-color:var(--primary-color);
+}
+
+
+tbody tr:nth-child(n):hover{
+    background-color:rgba(231, 231, 231, 0.5);
+}
+/*END ASSETS*/
+
+
+/*MEDIA QUERIES*/
+@media screen and (min-width:991px){
+    .navbar-mobile.active{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 1200px) { /*Window : 1200px and 1024px*/
+}
+
+@media screen and  (max-width: 1024px) { /*Window : 1024px and 768px*/
+    .contact-image {
+        display:none;
+    }
+    .contact form{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 991px) { /*Window : 850px and 768px*/
+    .open-menu{
+        display:flex;
+    }
+    .navbar{
+        display:none;
+    }
+    .logo-menu{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 768px) { /*Window 768px and 600px*/
+    .form-button{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) { /*Window : -600px */
+}
+/*END MEDIA QUERIES*/
+
+
+
+

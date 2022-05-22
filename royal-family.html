@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Web Development Tech Challenge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <header class="container"> <!--HEADER-->
+        <div class="logo-menu"> <!--LOGO+ICON MOBILE-->
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.jpg" alt="logo" /></a>
+            </div>
+            <div id="openMenu" class="open-menu"><img id="icon-menu" src="assets/icon-menu.png" alt="icon-menu"></div>
+        </div>
+        <nav id="navbar" class="navbar"> <!--NAVBAR-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="royal-family.html">Royal Family</a></li>
+                <li><a href="assets.html">Royal Assets</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!--MAIN CONTENT-->
+        <section class="container">
+            <h1 class="title-section">The Royal Family</h1>
+            <div class="shield-line">
+                <img src="assets/shield.png" alt="shield" />
+                <div class="color-line"></div>
+            </div>
+            <div class="cards-family">
+                <div class="card">
+                    <div class="card-image">
+                        <img id="king" src="assets/family/king_right.jpg" alt="king-aeetes" />
+                    </div>
+                    <h2 class="title-card">King Aeetes</h2>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img id="princess" src="assets/family/princess_right.jpg" alt="princess-madeas" />
+                    </div>
+                    <h2 class="title-card">Princess Madeas</h2>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img id="queen"  src="assets/family/queen_right.jpg" alt="queen-idyia" />
+                    </div>
+                    <h2 class="title-card">Queen Idyia</h2>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img id="guard" src="assets/family/guard_right.jpg" alt="guard-arthur" />
+                    </div>
+                    <h2 class="title-card">Guard Arthur</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JS FILE -->
+    <script src="script.js"></script>
+  </body>
+</html>
