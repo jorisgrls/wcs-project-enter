@@ -5,7 +5,7 @@ This is my Wild Code School entry project based on school's wireframes.
 ## Developing
 
 ### Built With
-HTML,CSS,Python
+HTML,CSS,JavaScript
 
 
 ### Setting up Dev
